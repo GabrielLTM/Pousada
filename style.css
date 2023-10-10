@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    box-sizing: border-box;
+}
+.limitar-secao {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  /*ESTILIZANDO O TOPO*/
+.topo{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3d3d3d;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+.pousada a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-left: 20%;
+}
+.pousada span{
+    color: #6592c9;
+}
+.link-topo{
+    margin-right: 5%;
+}
+.link-topo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    margin-left: 60px;
+    padding: 0 3px;
+}
+.link-topo a:hover{
+    border-bottom: 3px solid rgb(73, 153, 125);
+}
+/*ESTILIZANDO O CONTEUDO*/
+.banner-conteudo{
+    width: 100%;
+    height: 44vw;
+    background-image: url(assets/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1860px;
+}
+.conteudo{
+    background: rgba(73, 153, 125, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 35px;
+    
+}
+.conteudo h1{
+    font-size: 4vw;
+}
+.conteudo p{
+    font-size: 2vw;
+}
+/*BEM VINDO*/
+.bem-vindo{
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.bem-vindo h1{
+    font-weight: normal;
+    font-size: 3vh;
+}
+
+@media (max-width: 661px){
+    .pousada a{
+        margin-left: 60%;
+        margin-top: 40px;
+    }
+    .link-topo{
+        padding: 10px 0;
+    }
+    .conteudo{
+        margin-top: 15%;
+        margin-right: 15%;
+    }
+    .rodapé{
+        flex-direction: column;
+    }
+}
+/*QUARTOS*/
+
+.quartos-img{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+}
+.quartos-img img{
+    width: 80%;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 6px 6px 20px #b8b6b6;
+}
+.quartos-conteudo{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.quartos-conteudo p{
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.quartos-conteudo p:hover{
+    border-bottom: 2px solid rgb(73, 153, 125);
+}
+@media (max-width:1068px){
+    .quartos-img{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .quartos-img img{
+        height: 250px;
+    }
+}
+.mapa{
+    margin-top: 50px;
+    height: 300px;
+    padding-bottom: 30px;
+}
+.pousada-final{
+    text-align: center;
+    line-height: 30px;
+    margin-top: 70px;
+}
+.pousada-final h1{
+    font-weight: normal;
+    font-size: 3vh;
+}
+.final{
+    max-width: 1200px;
+}
+.card-final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.final-conteudo p{
+    font-size: 16px;
+}
+.final-imagem img{
+    width: 160px;
+    height: 170px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 20px #b8b6b6;
+}
+.conteudo-final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    width: 580px;
+}
+@media (max-width:1179px){
+    .card-final{
+        justify-content: center;
+        padding: 20px;
+    }
+    .final-imagem img{
+        height: 200px;
+        width: 160px;
+    }
+}
+ /*RODAPÉ*/
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #49997d;
+    margin-top: 60px;
+}
+.rodapé{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #538877 2px solid;
+    max-width: 1200px;
+    
+}
+.rodapé-estilo{
+    width: 280px;
+    height: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.rodapé-estilo p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.rodapé-estilo:hover{
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+.acabou{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+@media (max-width: 661px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+    }
+}
